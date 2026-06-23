@@ -1,0 +1,127 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.layout {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.cookieButton {
+  display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.cookieButton img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.cookieButton:hover img {
+  transform: scale(1.08);
+}
+
+.points {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.list {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.error {
+  color: #b00020;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2f6fed;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #1d55bd;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.userList li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.userList span {
+  color: #666;
+}
+
+@media (min-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card:nth-child(3) {
+    grid-column: span 2;
+  }
+}
